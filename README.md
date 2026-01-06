@@ -6,10 +6,12 @@ A research assistant agent system built with OpenAI GPT-4o and Phoenix Tracing, 
 ```
 LLM-Evaluation-with-Phoenix/
 ├── agents/                  # Agent definitions
+│   ├── __init__.py
 │   ├── router_agent.py      # Routes user intent to specialized agents
 │   ├── insight_agent.py     # Generates research insights
 │   └── summary_agent.py     # Summarizes research insights
 ├── utils/
+│   ├── __init__.py
 │   ├── web_search.py        # Tavily web search integration
 │   └── tool_schema.py       # OpenAI tool schemas
 ├── evaluation.py            # Evaluation framework (tool calling & hallucination)
