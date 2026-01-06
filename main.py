@@ -14,7 +14,7 @@ import phoenix as px
 import pandas as pd
 import threading
 from openinference.instrumentation import suppress_tracing
-import Evaluation
+import evaluation
 import tracer
 
 # Launch Phoenix Ui in background

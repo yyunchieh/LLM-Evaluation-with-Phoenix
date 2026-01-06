@@ -7,7 +7,7 @@ from opentelemetry.trace import Status, StatusCode
 from tracer import tracer
 from utils.tool_schema import tools, tool_implementations
 from opentelemetry.trace import get_current_span
-#from experiment_config import CURRENT_VERSION, EXPERIMENT_NAME, get_current_version_info
+
 
 INPUT_VALUE = "input.value"
 OUTPUT_VALUE = "output.value"

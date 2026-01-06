@@ -1,0 +1,28 @@
+# Core Dependencies
+streamlit
+pandas
+python-dotenv
+
+# OpenAI & LangChain
+openai
+langchain-openai
+
+# Anthropic
+anthropic
+
+# Tavily Search
+tavily-python
+
+# Phoenix & OpenTelemetry for Tracing
+arize-phoenix
+arize-phoenix-evals
+openinference-instrumentation
+openinference-instrumentation-openai
+opentelemetry-api
+
+# Database
+sqlalchemy
+
+# Utilities
+tqdm
+nest-asyncio

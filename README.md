@@ -55,7 +55,7 @@ LLM-Evaluation-with-Phoenix/
 ### 1. Install Dependencies
 
 ```bash
-pip install openai langchain-openai python-dotenv phoenix-ai tavily-python streamlit pandas nest-asyncio anthropic
+pip install -r requirements.txt
 ```
 
 ### 2. Configure API Keys
