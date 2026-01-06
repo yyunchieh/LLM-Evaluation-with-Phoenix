@@ -5,12 +5,12 @@ A research assistant agent system built with OpenAI GPT-4o and Phoenix Tracing, 
 
 ```
 LLM-Evaluation-with-Phoenix/
-├── agents/                  # Agent definitions
+├── agents/                  # Python package containing agent definitions 
 │   ├── __init__.py
 │   ├── router_agent.py      # Routes user intent to specialized agents
 │   ├── insight_agent.py     # Generates research insights
 │   └── summary_agent.py     # Summarizes research insights
-├── utils/
+├── utils/                   # Python package for utilities and tools
 │   ├── __init__.py
 │   ├── web_search.py        # Tavily web search integration
 │   └── tool_schema.py       # OpenAI tool schemas
@@ -27,7 +27,7 @@ LLM-Evaluation-with-Phoenix/
 ## Features
 
 ### 1. Multi-Agent System
-- **Router Agent**: Automatically determines user input and routes to appropriate specialized agent
+- **Router Agent**: Routes user requests to appropriate agents, logs tool usage for evaluation
 - **Insight Agent**: Generates structured research insights including:
   - Domain introduction
   - List of research papers (Chicago Style citation format)
@@ -60,7 +60,7 @@ pip install openai langchain-openai python-dotenv phoenix-ai tavily-python strea
 
 ### 2. Configure API Keys
 
-Create a `.env` file with the following content:
+Create your own `.env` file with the following content:
 
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
