@@ -4,19 +4,22 @@ A research assistant agent system built with OpenAI GPT-4o and Phoenix Tracing, 
 ## Project Structure
 
 ```
-Agent Evaluation/
-├── agents/                  # Agent modules
-│   ├── insight_agent.py    # Generate research insights
-│   ├── summary_agent.py    # Generate summaries
-│   └── router_agent.py     # Router agent
-├── utils/                   # Utility modules
-│   ├── web_search.py       # Tavily web search
-│   └── tool_schema.py      # OpenAI tool definitions
-├── evaluation.py           # Evaluation framework (tool calling, hallucination)
-├── main.py                 # Streamlit UI
-├── config.py               # Configuration management
-├── tracer.py               # Phoenix Tracing setup
-└── .env                    # API keys 
+LLM-Evaluation-with-Phoenix/
+├── agents/                  # Agent definitions
+│   ├── router_agent.py      # Routes user intent to specialized agents
+│   ├── insight_agent.py     # Generates research insights
+│   └── summary_agent.py     # Summarizes research insights
+├── utils/
+│   ├── web_search.py        # Tavily web search integration
+│   └── tool_schema.py       # OpenAI tool schemas
+├── evaluation.py            # Evaluation framework (tool calling & hallucination)
+├── tracer.py                # Phoenix tracing & OpenTelemetry setup
+├── main.py                  # Streamlit UI
+├── config.py                # Environment & configuration management
+├── langgraph.json           # Declarative agent graph configuration & entry point
+├── .env                     # Environment variables (create by yourself; contains API keys)
+├── requirements.txt
+└── README.md
 ```
 
 ## Features
