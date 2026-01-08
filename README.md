@@ -180,12 +180,6 @@ Three main evaluation functions:
 - `web_search()`: General search function
 - `web_search_for_research()`: Research topic-specific search
 
-## Database
-
-The project uses SQLite database:
-- `phoenix.db`: Phoenix tracing data
-- Can be viewed using SQLite tools for raw data access
-
 ## Output Files
 
 ### Markdown Output
@@ -207,7 +201,7 @@ The project uses SQLite database:
 ## Tech Stack
 
 - **LLM**: OpenAI GPT-4o
-- **Framework**: LangChain, OpenAI Python SDK
+- **Framework**: OpenAI Python SDK, LangChain (ChatOpenAI wrapper)
 - **Tracing**: Phoenix AI (OpenTelemetry)
 - **Web Search**: Tavily API
 - **UI**: Streamlit
