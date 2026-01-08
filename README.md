@@ -18,7 +18,6 @@ LLM-Evaluation-with-Phoenix/
 ├── tracer.py                # Phoenix tracing & OpenTelemetry setup
 ├── main.py                  # Streamlit UI
 ├── config.py                # Environment & configuration management
-├── langgraph.json           # Declarative agent graph configuration & entry point
 ├── .env                     # Environment variables (create by yourself; contains API keys)
 ├── requirements.txt
 └── README.md
